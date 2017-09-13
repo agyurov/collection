@@ -1,0 +1,24 @@
+\section{Bayes' Theorem}
+%-----------------------------------------------------
+
+Axiom 1 (Conditional probability):
+\begin{align}
+P(A\cap B) = P(A)P(B|A) = P(B \cap A) = P(B)P(A|B)
+\label{bayes_ax1}
+\end{align}
+Axiom 2:
+\begin{equation}
+	\begin{aligned}
+		P(A) &= P(A\cap B) + P(A\cap \neg B)\\
+ 		&= P(B)P(A|B) + P(\neg B)P(A|\neg B)
+	\end{aligned}
+\label{bayes_ax2}
+\end{equation}
+%-----------------------------------------------------
+Bayes' Theorem:
+\begin{bfeq}{align}
+P(A|B)\; &\displaystyle_{=}^{\eqref{bayes_ax1}} \dfrac{P(A)P(B|A)}{P(B)}\\
+&\displaystyle_{=}^{\eqref{bayes_ax2}} \dfrac{P(A)P(B|A)}{P(A)P(B|A) + P(\neg A)P(B|\neg A)}
+\label{bayes_th}
+\end{bfeq}
+%-----------------------------------------------------
