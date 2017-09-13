@@ -17,8 +17,13 @@ Axiom 2:
 %-----------------------------------------------------
 Bayes' Theorem:
 \begin{bfeq}{align}
-P(A|B)\; &\displaystyle_{=}^{\eqref{bayes_ax1}} \dfrac{P(A)P(B|A)}{P(B)}\\
-&\displaystyle_{=}^{\eqref{bayes_ax2}} \dfrac{P(A)P(B|A)}{P(A)P(B|A) + P(\neg A)P(B|\neg A)}
+P(A|B)\; &\displaystyle_{=}^{\eqref{bayes_ax1}} \dfrac{P(A)\,P(B|A)}{P(B)}\\
+&\displaystyle_{=}^{\eqref{bayes_ax2}} \dfrac{P(A)\,P(B|A)}{P(A)\,P(B|A) + P(\neg A)\,P(B|\neg A)}
 \label{bayes_th}
 \end{bfeq}
 %-----------------------------------------------------
+Chain rule:
+\begin{equation}
+P(A_1\cap\dots\cap A_n) = P(A_1)\,P(A_2|A_1)\,P(A_3|A_1,A_2)\dots P(A_n|A_1\dots A_{n-1})
+\end{equation}
+%-----------------------------------------------------%-----------------------------------------------------%-----------------------------------------------------

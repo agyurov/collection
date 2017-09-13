@@ -1,0 +1,43 @@
+
+
+\section{Desnity \& cumulative distributions}
+%-----------------------------------------------------
+\subsection{Expectation}
+
+%-----------------------------------------------------
+\subsection{Probability density (mass) function (PDF)}
+For a random variable $X$ with PDF $f$ holds:
+\begin{bfeq}{equation}
+P(a\,<\,X<\,b) = \int_a^b f(x) dx
+\label{prob_pdf}
+\end{bfeq}
+
+\subsection{Cumulative distribution function (CDF)}
+For a random variable $X$ with PDF $f$, the CDF, $F$, is defined as:
+\begin{bfeq}{align}
+F(x) = P(X\le x)= \int_{-\infty}^x f(x) dx
+\label{prob_cdf}
+\end{bfeq}
+Therefore:
+\begin{bfeq}{equation*}
+F(b) - F(a) = P(a < X \leq b)
+\end{bfeq}
+
+\subsection{Independence}
+\begin{definition}[Indepence 1]
+\label{prob_indep1}
+\begin{align*}
+	P(A\cap B) = P(A)\,P(B)\\
+	P(\cap A_i) = \prod_i P(A_i)
+\end{align*}
+Follows from the definition of conditional probability \eqref{bayes_ax1}:
+\[P(A\cap B) = P(A)\,P(B|A) = P(A)\,P(B),\; P(B|A) = P(B) \]
+
+\end{definition}
+\begin{definition}[Conditional Indepence]
+$$P(A\cap B|C) = P(A|C)\,P(B|C)$$
+\end{definition}
+
+\begin{corollary}[Indepence \& Correlation]
+aaa
+\end{corollary}

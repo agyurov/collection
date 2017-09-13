@@ -1,13 +1,19 @@
 %-----------------------------------------------------
 \input{doc_info}
 \usepackage{amsmath, environ}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{theorem}
+\theoremstyle{break}
 %-----------------------------------------------------
-%
+%\newtheorem{definition}{Definition}
+%\newtheorem*{remark}{Remark}
+\input{functions/functions}
 %-----------------------------------------------------
 \begin{document}
 %-----------------------------------------------------
 % Input functions
-\input{functions/functions}
+
 %-----------------------------------------------------
 \begin{center}
 {\Huge \textsc{Collection}}\\ \today
@@ -24,7 +30,7 @@
 \hrule
 \input{chptrs/bayes/bayes.tex}
 %-----------------------------------------------------
-\hrule
+\input{chptrs/fundamentals/pdf_cdf}
 %-----------------------------------------------------
 %-----------------------------------------------------
 %-----------------------------------------------------
